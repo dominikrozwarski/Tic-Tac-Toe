@@ -45,6 +45,10 @@ h1 {
 	font-family: 'Grape Nuts', cursive;
 }
 
+.top div{
+	font-family: 'Grape Nuts', cursive;
+}
+
 .top {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -59,8 +63,8 @@ h1 {
 .top div {
 	background-color: grey;
 	cursor: pointer;
-	min-width: 127.13px;
-	min-height: 150.5px;
+	min-width: 100px;
+	min-height: 150px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -108,7 +112,7 @@ button {
 	cursor: pointer;
 	border-radius: 10px;
 	border: none;
-	background-color: #2439377f;
+	background-color: #283a397f;
 	transition: 0.3s;
 }
 
@@ -130,7 +134,7 @@ button:hover {
 	flex-direction: column;
 	border-radius: 25px;
 	text-align: center;
-	/* z-index: -1; */
+	z-index: -1;
 }
 
 .closeBtn {
