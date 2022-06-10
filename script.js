@@ -24,6 +24,10 @@ let winningCondition = [
 ];
 
 const winner = () => {
+	let i= 0;
+	for(i = 0 ; i <boxes.length ; i++){
+	console.log(boxes[i].innerHTML);}
+	console.log(winningCondition[0]);
 	
 };
 
@@ -36,7 +40,7 @@ const whoesRound = () => {
 	a++;
 };
 
-// let winnigCondition = []
+
 
 const showInfo = () => {
 	invisible.style.zIndex = '10';
@@ -56,6 +60,7 @@ for (let i of boxes) {
 		} else {
 			this.innerHTML = `${who}`;
 			winner();
+			
 			
 		}
 	});
