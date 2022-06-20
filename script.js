@@ -30,6 +30,7 @@ const winner = () => {
 	console.log(winningCondition[0]);
 	
 };
+//winner condition
 
 const whoesRound = () => {
 	if (a % 2 != 0) {

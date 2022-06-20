@@ -137,6 +137,25 @@ button {
 	transition: 0.3s;
 }
 
+.position{
+	position: relative;
+	height: 50px;
+	width: 50px;
+	text-align: center;	
+	line-height: 50px;
+	right: -70px;
+	background-color: white;
+	border-radius: 50%;
+	font-size: 24px;
+	
+}
+
+.position:hover{
+	transform: none;
+	background-color: white;
+	
+}
+
 button:hover {
 	transform: scale(1.1);
 	background-color: rgba(255, 255, 255, 0.671);
