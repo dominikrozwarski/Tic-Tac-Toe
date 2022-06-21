@@ -4,16 +4,16 @@ const invisible = document.querySelector('.invisible');
 const shadow = document.querySelector('.shadow');
 
 const closeBtn = document.querySelector('.closeBtn');
-const startBtn = document.querySelector('.startBtn');
 const restartBtn = document.querySelector('.restartBtn');
 const swapBtn = document.querySelector('.swapBtn');
 const boxes = document.querySelectorAll('.box');
+const mainSide = document.querySelector('.position');
 
 let a = 0;
 let who;
 
-let winningCondition = [
-	[0, 1, 3],
+let winningConditions = [
+	[0, 1, 2],
 	[3, 4, 5],
 	[6, 7, 8],
 	[0, 3, 6],
@@ -24,13 +24,11 @@ let winningCondition = [
 ];
 
 const winner = () => {
-	let i= 0;
-	for(i = 0 ; i <boxes.length ; i++){
-	console.log(boxes[i].innerHTML);}
-	console.log(winningCondition[0]);
 	
-};
-//winner condition
+
+
+}
+
 
 const whoesRound = () => {
 	if (a % 2 != 0) {
@@ -40,8 +38,6 @@ const whoesRound = () => {
 	}
 	a++;
 };
-
-
 
 const showInfo = () => {
 	invisible.style.zIndex = '10';
@@ -61,11 +57,17 @@ for (let i of boxes) {
 		} else {
 			this.innerHTML = `${who}`;
 			winner();
-			
-			
 		}
 	});
 }
 
+const restartGame = () => {
+	for (let i = 0; i < boxes.length; i++) {
+		boxes[i].innerHTML = '';
+		a = 0;
+	}
+};
+
 questionMark.addEventListener('click', showInfo);
 closeBtn.addEventListener('click', closeInfo);
+restartBtn.addEventListener('click', restartGame);
