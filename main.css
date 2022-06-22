@@ -190,3 +190,24 @@ button:hover {
 	background-color: rgba(0, 0, 0, 0.1);
 	z-index: -10;
 }
+
+
+.winner{
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	background-color: rgb(150, 145, 145);
+	border-radius: 5%;
+	color: white;
+	border: white 1px solid;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	z-index: -100;
+	font-size: 24px;
+}
+
+.restartBtn{
+	z-index: 1000;
+}
+
